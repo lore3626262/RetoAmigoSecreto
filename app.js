@@ -8,6 +8,12 @@ function agregarAmigo() {
         alert("Por favor, inserte un nombre.");
         return;
     }
+    if (amigos.includes(nombre)) {
+        alert("Ese nombre ya está en la lista.");
+        return;
+    }
+
+    
 
     amigos.push(nombre);
     console.log("Lista de amigos actualizada:", amigos);
